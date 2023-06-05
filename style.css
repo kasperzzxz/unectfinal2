@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho {
+    background-color: #226ED8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.titulo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #FAFAFA;
+}
+
+.botao {
+    color: #FAFAFA;
+}
+
+.principal {
+    background-color: #E5E5E5;
+    padding: 3em;
+    height: 100vh;
+    padding: 32px 160px;
+}
+
+.frase {
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    border-radius: 20px;
+    max-width: 640px;
+    padding: 16px 20px;
+    gap: 16px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.04);
+}
+
+.frase__titulo {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.frase__paragrafo {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.tarefas {
+    display: flex;
+    margin: 32px 0;
+}
+
+.a-fazer__cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.a-fazer__titulo {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.add {
+    background-color: transparent;
+    border: 2px solid #226ED8;
+    border-radius: 50%;
+    display: flex;
+    padding: 12px;
+    align-items: center;
+}
+
+.add:hover {
+    cursor: pointer;
+}
+
+.a-fazer__caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.caixa-tarefa {
+    background-color: white;
+    border-radius: 10px;
+    padding: 12px;
+    position: relative;
+}
+
+.tarefa__cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 253px;
+    margin-bottom: 10px;
+}
+
+.tarefa--titulo {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tarefa-menu {
+    background-color: transparent;
+    border: none;
+}
+
+.tarefa-menu:hover {
+    cursor: pointer;
+}
+
+.tarefa-menu--desativa {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    gap: 6px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    width: min-content;
+    padding: 8px;
+    position: absolute;
+    top: 36px;
+    right: 9px;
+    border: none;
+    display: none;
+}
+
+.tarefa-menu--ativa {
+    display: flex;
+    cursor: pointer;
+}
+
+.menu--excluir {
+    color: #DF0000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tarefa-descricao {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 13px;
+    justify-content: space-between;
+}
+
+.expandir {
+    margin-left: 5px;
+}
+
+.descricao--texto {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.descricao--texto:hover {
+    cursor: pointer;
+}
+
+.tarefa-descricao--desativa {
+    position: absolute;
+    top: 0%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+.tarefa-descricao--ativa {
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+}
+
+.descricao {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.botao__passar {
+    background: transparent;
+    border: none;
+}
+
+.passar {
+    padding: 10px;
+    background-color: #226ED8;
+    border-radius: 20px;
+}
+
+.passar:hover {
+    cursor: pointer;
+}

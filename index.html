@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>To do List</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="img/[Imagem] Logo branca.png" alt="Logo da Unect" class="logo">
+        <h1 class="titulo">uTask 3.0</h1>
+        <h2 class="botao">uTask</h2>
+    </header>
+
+    <main class="principal">
+        <div class="frase">
+            <img src="img/tips_and_updates.png" alt="imagem de lampada" class="ideia">
+            <div class="frase__descricao">    
+                <h2 class="frase__titulo">Frase do dia</h2>
+                <p class="frase__paragrafo" id="frase_do_dia"></p>
+            </div>
+        </div>
+
+        <div class="tarefas">
+            <div class="tarefa__categoria a-fazer">
+                <div class="a-fazer__cabecalho">
+                    <h2 class="a-fazer__titulo">A fazer</h2>
+                    <button class="add" id="addTarefa"><img src="img/add.png" class="botaoAdd" alt=""></button>
+                </div>
+
+                
+
+                <div class="a-fazer__caixa">
+                    <article class="caixa-tarefa">
+                        <div class="tarefa__cabecalho">
+                            <h2 class="tarefa--titulo">Pagar conta de luz</h2>
+                            <button class="tarefa-menu" id="menu__tarefa"><img src="img/more_vert.png" alt="menu da tarefa"></button>
+                        </div>
+
+                        <button class="tarefa-menu--desativa" id="tarefa-menu--desativa">
+                            <img src="img/delete_outline.png" alt="imagem de lixeira">
+                            <p class="menu--excluir">Excluir</p>
+                        </button>
+
+                        <div class="tarefa-descricao">
+                            <button class="descricao--texto" id="botaoDescTarefa">Ler descrição <img src="img/expand_more.png" alt="seta expandir" class="expandir"></button>
+                            <button class="botao__passar"><img src="img/navigate_next.png" alt="passar para em andamento" class="passar"></button>
+                        </div>
+
+                        <div class="tarefa-descricao--desativa" id="tarefa-descricao--desativa">
+                            <p class="descricao">ir na loterica pagar a conta de luz</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/fraseDia.js"></script>
+</body>
+</html>
